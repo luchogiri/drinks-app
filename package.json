@@ -1,0 +1,39 @@
+{
+  "name": "drinks",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "run:ios": "react-native run-ios",
+    "run:android": "react-native run-android",
+    "emulate:android": "/Users/lucho/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd NEXUS5API25",
+    "build:android": "cd android && ./gradlew assembleRelease && cd ..",
+    "watch:web": "webpack -d --watch",
+    "build:web": "env NODE_ENV=production webpack -p"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-react-native": "^2.1.0",
+    "babel-regenerator-runtime": "^6.5.0",
+    "es6-promise": "^4.1.1",
+    "glamor": "^3.0.0-2",
+    "react": "16.0.0-alpha.6",
+    "react-dom": "16.0.0-alpha.6",
+    "react-native": "0.44.3",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "webpack": "^3.0.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
