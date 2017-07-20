@@ -24,6 +24,11 @@ const config = {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
         exclude: /(node_modules)/
+      },
+      {
+        include: [LIB_DIR],
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: "file-loader?name=/img/[name].[ext]"
       }
     ]
   },
